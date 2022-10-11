@@ -1,3 +1,6 @@
+import burgerIcon from './images/burger-icon.png';
+import familyImg from './images/family.jpg';
+
 const content = document.getElementById('content');
 
 function populateHeader() {
@@ -6,7 +9,7 @@ function populateHeader() {
   content.appendChild(header);
 
   const burger = document.createElement('img');
-  burger.setAttribute('src', '../src/images/burger-icon.png');
+  burger.setAttribute('src', burgerIcon);
   burger.setAttribute('alt', 'burger');
   burger.id = 'burger-icon';
   header.appendChild(burger);
@@ -44,7 +47,7 @@ function populateContainer() {
   content.appendChild(container);
 
   const family = document.createElement('img');
-  family.setAttribute('src', '../src/images/family.jpg');
+  family.setAttribute('src', familyImg);
   family.setAttribute('alt', 'family');
   family.id = 'family';
   container.appendChild(family);

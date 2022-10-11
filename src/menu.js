@@ -1,3 +1,9 @@
+import burgerIcon from './images/burger-icon.png';
+import wingsImg from './images/wings.jpg';
+import platterImg from './images/platter.jpg';
+import cheeseburgerImg from './images/cheeseburger.jpg';
+import fishImg from './images/fish.jpg';
+
 const content = document.getElementById('content');
 
 function populateHeader() {
@@ -6,7 +12,7 @@ function populateHeader() {
   content.appendChild(header);
 
   const burger = document.createElement('img');
-  burger.setAttribute('src', '../src/images/burger-icon.png');
+  burger.setAttribute('src', burgerIcon);
   burger.setAttribute('alt', 'burger');
   burger.id = 'burger-icon';
   header.appendChild(burger);
@@ -44,7 +50,7 @@ function populateContainer() {
   content.appendChild(container);
   
   const wings = document.createElement('img');
-  wings.setAttribute('src', '../src/images/wings.jpg');
+  wings.setAttribute('src', wingsImg);
   wings.setAttribute('alt', 'wings');
   wings.id = 'wings';
   container.appendChild(wings);
@@ -78,13 +84,13 @@ function populateContainer() {
   platterInfo.appendChild(p);
 
   const platter = document.createElement('img');
-  platter.setAttribute('src', '../src/images/platter.jpg');
+  platter.setAttribute('src', platterImg);
   platter.setAttribute('alt', 'platter');
   platter.id = 'platter';
   container.appendChild(platter);
 
   const cheeseburger = document.createElement('img');
-  cheeseburger.setAttribute('src', '../src/images/cheeseburger.jpg');
+  cheeseburger.setAttribute('src', cheeseburgerImg);
   cheeseburger.setAttribute('alt', 'cheeseburger');
   cheeseburger.id = 'cheeseburger';
   container.appendChild(cheeseburger);
@@ -114,7 +120,7 @@ function populateContainer() {
   fishInfo.appendChild(p);
 
   const fish = document.createElement('img');
-  fish.setAttribute('src', '../src/images/fish.jpg');
+  fish.setAttribute('src', fishImg);
   fish.setAttribute('alt', 'fish and chips');
   fish.id = 'fish';
   container.appendChild(fish);

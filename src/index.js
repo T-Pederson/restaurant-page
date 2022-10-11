@@ -1,6 +1,8 @@
 import { populateHome } from "./home";
 import { populateMenu } from "./menu";
 import { populateAbout } from "./about";
+import './styles.css';
+
 
 // Display home page on first time loading page
 home();

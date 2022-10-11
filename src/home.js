@@ -1,3 +1,7 @@
+import burgerIcon from './images/burger-icon.png';
+import brickWallImg from './images/brick-wall.jpg';
+import barImg from './images/bar.jpg';
+
 const content = document.getElementById('content');
 
 function populateHeader() {
@@ -6,7 +10,7 @@ function populateHeader() {
   content.appendChild(header);
 
   const burger = document.createElement('img');
-  burger.setAttribute('src', '../src/images/burger-icon.png');
+  burger.setAttribute('src', burgerIcon);
   burger.setAttribute('alt', 'burger');
   burger.id = 'burger-icon';
   header.appendChild(burger);
@@ -44,7 +48,7 @@ function populateContainer() {
   content.appendChild(container);
 
   const brickWall = document.createElement('img');
-  brickWall.setAttribute('src', '../src/images/brick-wall.jpg');
+  brickWall.setAttribute('src', brickWallImg);
   brickWall.setAttribute('alt', 'brick wall');
   brickWall.id = 'brickWall'
   container.appendChild(brickWall);
@@ -87,7 +91,7 @@ function populateContainer() {
   hoursList.appendChild(hoursItem);
 
   const bar = document.createElement('img');
-  bar.setAttribute('src', '../src/images/bar.jpg');
+  bar.setAttribute('src', barImg);
   bar.setAttribute('alt', 'bar');
   bar.id = 'bar';
   container.appendChild(bar);

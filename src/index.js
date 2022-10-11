@@ -1,4 +1,6 @@
 import { populateHome } from "./home";
+import { populateMenu } from "./menu";
+import { populateTeam } from "./team";
 
 // Display home page on first time loading page
 home();

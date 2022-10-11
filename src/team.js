@@ -6,9 +6,9 @@ function populateHeader() {
   content.appendChild(header);
 
   const burger = document.createElement('img');
-  burger.setAttribute('src', '../src/images/burger.png');
+  burger.setAttribute('src', '../src/images/burger-icon.png');
   burger.setAttribute('alt', 'burger');
-  burger.id = 'burger';
+  burger.id = 'burger-icon';
   header.appendChild(burger);
 
   const h1 = document.createElement('h1');
@@ -39,7 +39,9 @@ function populateNavbar() {
 }
 
 function populateContainer() {
-
+  const container = document.createElement('div');
+  container.classList.add('container');
+  content.appendChild(container);
 }
 
 function populateFooter() {

@@ -22,7 +22,7 @@ img {
   border-radius: 8px;
 }
 
-#burger {
+#burger-icon {
   height: 76px;
 }
 
@@ -69,9 +69,9 @@ ul {
   grid-template-columns: 450px 450px;
   grid-auto-rows: min-content;
   justify-content: center;
+  align-content: center;
   gap: 24px;
   color: rgba(0, 0, 0, 0.7);
-  padding: 80px 0;
   font-size: 1.1em;
 }
 
@@ -79,7 +79,7 @@ ul {
   height: 300px;
 }
 
-h3 {
+h2 {
   font-size: 1.5em;
   font-weight: bold;
   color: black;
@@ -90,6 +90,20 @@ h3 {
   grid-row: 2 / 4;
   grid-column: 2 / 3;
   align-self: flex-end;
+}
+
+#wings,
+#platter,
+#cheeseburger,
+#fish {
+  height: 200px;
+}
+
+#wings,
+#cheeseburger,
+#platterInfo,
+#fishInfo {
+  justify-self: end;
 }
 
 .footer {

@@ -6,9 +6,9 @@ function populateHeader() {
   content.appendChild(header);
 
   const burger = document.createElement('img');
-  burger.setAttribute('src', '../src/images/burger.png');
+  burger.setAttribute('src', '../src/images/burger-icon.png');
   burger.setAttribute('alt', 'burger');
-  burger.id = 'burger';
+  burger.id = 'burger-icon';
   header.appendChild(burger);
 
   const h1 = document.createElement('h1');
@@ -57,7 +57,7 @@ function populateContainer() {
   hours.id = 'hours';
   container.appendChild(hours);
 
-  const hoursHeading = document.createElement('h3');
+  const hoursHeading = document.createElement('h2');
   hoursHeading.innerText = 'Hours';
   hours.appendChild(hoursHeading);
 
@@ -96,7 +96,7 @@ function populateContainer() {
   info.id = 'info';
   container.appendChild(info);
 
-  const infoHeading = document.createElement('h3');
+  const infoHeading = document.createElement('h2');
   infoHeading.innerText = 'Contact';
   info.appendChild(infoHeading);
 

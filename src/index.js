@@ -1,6 +1,6 @@
 import { populateHome } from "./home";
 import { populateMenu } from "./menu";
-import { populateTeam } from "./team";
+import { populateAbout } from "./about";
 
 // Display home page on first time loading page
 home();
@@ -14,7 +14,7 @@ function clearPage() {
 function tabEvents() {
   document.getElementById('home').addEventListener('click', home);
   document.getElementById('menu').addEventListener('click', menu);
-  document.getElementById('team').addEventListener('click', team);
+  document.getElementById('about').addEventListener('click', about);
 }
 
 function home() {
@@ -29,8 +29,8 @@ function menu() {
   tabEvents();
 }
 
-function team() {
+function about() {
   clearPage();
-  populateTeam();
+  populateAbout();
   tabEvents();
 }

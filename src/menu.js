@@ -33,8 +33,8 @@ function populateNavbar() {
   listItem.innerText = 'Menu';
   navList.appendChild(listItem);
   listItem = document.createElement('li');
-  listItem.id = 'team';
-  listItem.innerText = 'Team';
+  listItem.id = 'about';
+  listItem.innerText = 'About';
   navList.appendChild(listItem);
 }
 

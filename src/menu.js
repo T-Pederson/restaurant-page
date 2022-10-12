@@ -1,54 +1,11 @@
-import burgerIcon from './images/burger-icon.png';
 import wingsImg from './images/wings.jpg';
 import platterImg from './images/platter.jpg';
 import cheeseburgerImg from './images/cheeseburger.jpg';
 import fishImg from './images/fish.jpg';
 
-const content = document.getElementById('content');
+export function populateMenu() {
+  const container = document.querySelector('.container');
 
-function populateHeader() {
-  const header = document.createElement('div');
-  header.classList.add('header');
-  content.appendChild(header);
-
-  const burger = document.createElement('img');
-  burger.setAttribute('src', burgerIcon);
-  burger.setAttribute('alt', 'burger');
-  burger.id = 'burger-icon';
-  header.appendChild(burger);
-
-  const h1 = document.createElement('h1');
-  h1.innerText = 'Hudson & Co.';
-  header.appendChild(h1);
-}
-
-function populateNavbar() {
-  const navbar = document.createElement('div');
-  navbar.classList.add('navbar');
-  content.appendChild(navbar);
-
-  const navList = document.createElement('ul');
-  navbar.appendChild(navList);
-
-  let listItem = document.createElement('li');
-  listItem.id = 'home';
-  listItem.innerText = 'Home';
-  navList.appendChild(listItem);
-  listItem = document.createElement('li');
-  listItem.id = 'menu'
-  listItem.innerText = 'Menu';
-  navList.appendChild(listItem);
-  listItem = document.createElement('li');
-  listItem.id = 'about';
-  listItem.innerText = 'About';
-  navList.appendChild(listItem);
-}
-
-function populateContainer() {
-  const container = document.createElement('div');
-  container.classList.add('container');
-  content.appendChild(container);
-  
   const wings = document.createElement('img');
   wings.setAttribute('src', wingsImg);
   wings.setAttribute('alt', 'wings');
@@ -124,21 +81,4 @@ function populateContainer() {
   fish.setAttribute('alt', 'fish and chips');
   fish.id = 'fish';
   container.appendChild(fish);
-}
-
-function populateFooter() {
-  const footer = document.createElement('div');
-  footer.classList.add('footer');
-  content.appendChild(footer);
-
-  const p = document.createElement('p');
-  p.innerText = 'Copyright © Tyson Pederson 2022';
-  footer.appendChild(p);
-}
-
-export function populateMenu() {
-  populateHeader();
-  populateNavbar();
-  populateContainer();
-  populateFooter();
 }

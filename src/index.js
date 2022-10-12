@@ -1,15 +1,17 @@
 import { populateHome } from "./home";
 import { populateMenu } from "./menu";
 import { populateAbout } from "./about";
+import { populateTemplate } from "./template";
 import './styles.css';
 
-
 // Display home page on first time loading page
-home();
+template();
+
+const container = document.querySelector('.container');
 
 function clearPage() {
-  while(content.firstChild) {
-    content.removeChild(content.lastChild);
+  while(container.firstChild) {
+    container.removeChild(container.lastChild);
   }
 }
 
@@ -34,5 +36,11 @@ function menu() {
 function about() {
   clearPage();
   populateAbout();
+  tabEvents();
+}
+
+function template() {
+  populateTemplate();
+  populateHome();
   tabEvents();
 }
